@@ -69,11 +69,11 @@ public class Main {
     public static void task9 () {
         System.out.println("Задача 9");
         int salary = 29000;
-        double total = 0;
+        double total = 0f;
         for (int i=1; i<=12; i++) {
             total=total+total*0.01;
             total=total+salary;
-            System.out.println("Месяц "+i+" сумма накоплений равна "+total+"рублей");
+            System.out.printf("Месяц "+i+" сумма накоплений равна %.2f%n",total,"рублей");
         }
     }
     public static void task10 () {
