@@ -38,21 +38,25 @@ public class Main {
     }
     public static void task5 () {
         System.out.println("Задача 5");
-        for (int x=1904; x<=2096; x=x+4){
-            System.out.println(x + " год является високосным");
+        for (int year = 1904; year <= 2096; year++) {
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                System.out.println(year + " год является високосным");
+            }
         }
     }
     public static void task6 () {
         System.out.println("Задача 6");
         for (int y=7; y<=98; y=y+7){
-            System.out.println(y);
+            System.out.print(y+" ");
         }
+        System.out.println();
     }
     public static void task7 () {
         System.out.println("Задача 7");
         for (int z=1; z<=512; z=z*2) {
-            System.out.println(z);
+            System.out.print(z+" ");
         }
+        System.out.println();
     }
     public static void task8 () {
         System.out.println("Задача 8");
@@ -64,9 +68,10 @@ public class Main {
     }
     public static void task9 () {
         System.out.println("Задача 9");
-        int salary = 29000, total = 0;
+        int salary = 29000;
+        double total = 0;
         for (int i=1; i<=12; i++) {
-            total=total+total/100;
+            total=total+total*0.01;
             total=total+salary;
             System.out.println("Месяц "+i+" сумма накоплений равна "+total+"рублей");
         }
@@ -76,6 +81,7 @@ public class Main {
         for (int i=1; i<=10; i++){
             int a=2*i;
             System.out.println("2*"+i+"="+a);
+            }
+
         }
     }
-}
